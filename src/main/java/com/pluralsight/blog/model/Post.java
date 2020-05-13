@@ -24,6 +24,15 @@ public class Post {
         super();
     }
 
+    @ManyToOne
+    private Category category;
+    public Category getCategory() {
+        return category;
+    }
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
     public Post(Long id, String title, String lead, String body, String author, Date date) {
         this();
         this.id = id;
