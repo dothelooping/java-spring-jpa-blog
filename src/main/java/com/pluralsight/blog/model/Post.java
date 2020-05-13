@@ -88,7 +88,7 @@ public class Post {
     }
 
     public String getDateStr() {
-        DateFormat outputFormatter = new SimpleDateFormat("MM/dd/yyyy");
+        DateFormat outputFormatter = new SimpleDateFormat("yyyy-MM-dd");
         return outputFormatter.format(this.date);
     }
 
